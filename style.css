@@ -44,11 +44,12 @@ body {
   justify-content: center;
   flex-direction: column;
   width: 20%;
+  height: fit-content;
   background-color: #f3e9e9;
   border-radius: 0.5rem;
   padding: 5px;
 }
-.box p {
+.box > p {
   width: 100%;
   /* This is because I hate to see something not symmetrical in my design */
   height: 180px;
@@ -86,7 +87,7 @@ th,
 td {
   border: 1px solid #000;
   padding: 5px;
-  height: 50px;
+  height: 60px;
   width: 33.33%;
   vertical-align: middle;
   text-align: center;
@@ -119,4 +120,34 @@ height: 80px;
 .likeBtn i{
     font-size: 1rem;
     color: #017efa;
+}
+/**************add comment styling***************/
+.comments{
+display: flex;
+align-items: center;
+justify-content: center;
+flex-direction: column;
+width: 100%;
+}
+textarea{
+width: 90%;
+height: 60px;
+resize: none;
+padding: 10px;
+
+}
+p.mycommnet{
+    background-color:#e6dcdc;
+    width: 90%;
+    height: fit-content;
+    border-radius: 10px;
+    word-wrap: break-word;
+    text-align: left;
+    padding: 10px;
+}
+.datespan{
+    display: block;
+    text-align: right;
+    font-size: 13px;
+    font-weight: 500;
 }
